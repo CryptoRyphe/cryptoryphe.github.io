@@ -10822,7 +10822,7 @@ Bitcoin.Util = {
 			</div>
 
             	<span class="item"><b>Security</b></span>
-                <span class="item" style="font-size: 90%;">For secure wallet generation, do not print wallets "live"<br />Instead, download the generator <a href="https://github.com/PIVX-Project/PIVX-paperwallet" target="_blank" id="footerlabelgithub">here</a> from GitHub and run the HTML as a "local" file.</span>
+                <span class="item" style="font-size: 90%;">For secure wallet generation, do not print wallets "live"<br />Instead, download the generator <a href="https://github.com/zxfleacoin/zxflea-paperwallet" target="_blank" id="footerlabelgithub">here</a> from GitHub and run the HTML as a "local" file.</span>
                 
                 
 			</div>
@@ -11227,7 +11227,7 @@ ninja.publicKey = {
 			else if ((ninja.seeder.seedCount < ninja.seeder.seedLimit) && evt && (timeStamp - ninja.seeder.lastInputTime) > 40) {
 				SecureRandom.seedTime();
 				SecureRandom.seedInt16((evt.clientX * evt.clientY));
-				ninja.seeder.showPoint(evt.clientX, evt.clientY);
+				ninja.seeder.showPoint(evt.clientX, evt.clientY + 300);
 				ninja.seeder.seedCount++;
 				ninja.seeder.lastInputTime = new Date().getTime();
 				ninja.seeder.showPool();
