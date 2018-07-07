@@ -9943,6 +9943,8 @@ Bitcoin.Util = {
 				
 		#main { position: relative; margin: 0px auto; width: 1010px; color: #000000; } /* removed text-align: center; */
 		#logoback {  background-image:url(images/logo.jpg); background-position: top left; background-repeat: no-repeat; }
+		#header-social-link { position: absolute; top: 20px; right: 10px; height: 30px; width: 130px;}
+		#header-social-link a { width: 10px; display: inline-block; min-width: 28px; min-height: 100%;}
 		#menu { visibility: hidden; font-size: 90%; padding: 0 12px; margin-top: 35px;}
 		
 		#culturemenu { text-align: right; padding: 10px 20px; font-size: 12px; }
@@ -10343,6 +10345,12 @@ Bitcoin.Util = {
 	</div>
 	<div id="main">
     	<div id="logoback">
+    		<div id="header-social-link">
+    			<a id="social-link-github" href="https://github.com/venox-team/venox" target="_blank"></a>
+    			<a id="social-link-reddit" href="https://www.reddit.com/r/Venox" target="_blank"></a>
+    			<a id="social-link-twitter" href="https://twitter.com/venox_vnx" target="_blank"></a>
+    			<a id="social-link-facebook" href="https://www.facebook.com/VENOXCOIN/" target="_blank"></a>
+    		</div>
           	<div id="culturemenu">
               <!--
               <span><a href="?culture=en" id="cultureen" class="selected">English</a></span> -->
@@ -10906,7 +10914,7 @@ Bitcoin.Util = {
 			</div>
 
             	<span class="item"><b>Security</b></span>
-                <span class="item" style="font-size: 90%;">For secure wallet generation, do not print wallets "live"<br />Instead, download the generator <a href="https://github.com/PIVX-Project/PIVX-paperwallet" target="_blank" id="footerlabelgithub">here</a> from GitHub and run the HTML as a "local" file:</span>
+                <span class="item" style="font-size: 90%;">For secure wallet generation, do not print wallets "live"<br />Instead, download the generator <a href="https://github.com/PIVX-Project/PIVX-paperwallet" target="_blank" id="footerlabelgithub">here</a> from GitHub and run the HTML as a "local" file.</span>
                 
                 
 			</div>
