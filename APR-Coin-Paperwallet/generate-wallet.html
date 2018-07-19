@@ -10617,43 +10617,7 @@ Bitcoin.Util = {
 				</div>
 
 				<div id="backTextControl" style="font-size: 12px;">
-                   <div style="float: left; width: 375px; text-align: right;">
-                  Denomination: 
-                  <select id="backDenominationSelect" onChange="setDenomination(this.value);">
-                    <option value="">*** None ***</option>
-                    <option value="10000 PIV">10000 PIV</option>
-                    <option value="5000 PIV">5000 PIV</option>
-                    <option value="2000 PIV">2000 PIV</option>
-                    <option value="1000 PIV">1000 PIV</option>
-                    <option value="50000 mPIV">50000 mPIV</option>
-                    <option value="10000 mPIV">10000 mPIV</option>
-                    <option value="5000 mPIV">5000 mPIV</option>
-                    <option value="1000 mPIV">1000 mPIV</option>
-                    <option value="500 mPIV">500 mPIV</option>
-                    <option value="100 mPIV">100 mPIV</option>
-                    <option value="50000 yPIV">50000 yPIV</option>
-                    <option value="10000 yPIV">10000 yPIV</option>
-                    <option value="5000 yPIV">5000 yPIV</option>
-                    <option value="1000 yPIV">1000 yPIV</option>
-                    <option value="500 yPIV">500 yPIV</option>
-                    <option value="100 yPIV">100 yPIV</option>
-                    <option value="50 yPIV">50 yPIV</option>
-                    <option value="20 yPIV">20 yPIV</option>
-                    <option value="10 yPIV">10 yPIV</option>
-                    <option value="5 yPIV">5 yPIV</option>
-                    <option value="1 yPIV">1 yPIV</option>
-                    <option value="other">Other...</option>
-                  </select>
-                  <div id="backDenominationOther" style="display: none;">
-                  <input id="backDenominationOtherAmount" maxlength="5" size="6" value="1" onChange="setDenomination('other');">
-                  <select id="backDenominationOtherUnit" onChange="setDenomination('other');">
-                    <option value="PIV">PIV</option>
-                  	<option value="yPIV">yPIV</option>
-                  	<option value="&mu;BTC">&mu;PIV</option>
-                  	<option value="mPIV">mPIV</option>
-                  </select>
-                  </div><!-- end backDenominationOther -->
-                              </div>
+                   <div style="float: left; width: 375px; text-align: right;"></div>
                               
                         <div style="float: left; margin: 0 0 0 80px;">
                        Message: 
@@ -10704,7 +10668,7 @@ Bitcoin.Util = {
                   </div><!-- end backLongText -->
                 </div><!-- end backText -->
 
-				<img id="backsvg1" class="backsvg" src="./images/back-300dpi-PIVX.jpg">
+				<img id="backsvg1" class="backsvg" src="./images/back-300dpi-APR.png">
 			</div><!-- end backarea -->
 
 
@@ -11939,7 +11903,7 @@ ninja.publicKey = {
 			// so the check is now only for undefined to use that version.
 
 			if (window.designChoice == 'default') { // if we are not loading up a special JPG-based design, render the canvas
-				document.getElementById("papersvg1").src = PaperWallet.draw.frontImage(bitcoinAddress, drawOpts);
+				document.getElementById("papersvg1").src =  './images/front-300dpi-APR.png';
 			}
 			// CODE to modify SVG DOM elements
 			//var paperSvg = document.getElementById("papersvg" + idPostFix);
@@ -13452,8 +13416,8 @@ function setDesign (whichDesign, isOnLoad, whichLanguage) {
 	// now deal with JPG-style backgrounds, and apply instructions to default design
 
 	if (whichDesign == 'default') {
-		var myFront = './images/front-300dpi-PIVX.png';
-		var myBack = './images/back-300dpi-PIVX.jpg';
+		var myFront = './images/front-300dpi-APR.png';
+		var myBack = './images/back-300dpi-APR.png';
 		var myPreview = './images/finished-sample-sealed.jpg';
 		// setup proper back text translation & controls
 		document.getElementById('backTextControl').style.display='block';
